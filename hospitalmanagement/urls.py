@@ -4,7 +4,7 @@ from hospital import views
 from django.contrib.auth.views import LoginView,LogoutView
 
 
-#-------------FOR ADMIN RELATED URLS
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home_view,name=''),
@@ -66,7 +66,7 @@ urlpatterns = [
 ]
 
 
-#---------FOR DOCTOR RELATED URLS-------------------------------------
+
 urlpatterns +=[
     path('doctor-dashboard', views.doctor_dashboard_view,name='doctor-dashboard'),
 
@@ -83,7 +83,7 @@ urlpatterns +=[
 
 
 
-#---------FOR PATIENT RELATED URLS-------------------------------------
+
 urlpatterns +=[
 
     path('patient-dashboard', views.patient_dashboard_view,name='patient-dashboard'),
@@ -94,6 +94,4 @@ urlpatterns +=[
 
 ]
 
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders
+
